@@ -1,0 +1,11 @@
+char {
+    border: 1px black solid;
+}
+
+.movable {
+    background-color:BLUE;
+}
+
+#arrow0 {
+    background-image : url("")
+}
