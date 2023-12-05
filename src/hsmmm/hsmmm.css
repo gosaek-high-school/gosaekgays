@@ -1,0 +1,16 @@
+char {
+    border: 1px black solid;
+}
+
+.movable {
+    background-color: blue;
+}
+
+#arrow1 {
+    background-image: url("res/arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 200px;
+    height: 100px;
+}
