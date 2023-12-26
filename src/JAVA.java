@@ -295,8 +295,8 @@ function resetGame() {
     noteElement.innerHTML = `Click the joystick to start!
         <p>Hard mode, Avoid black holes. Back to easy mode? Press E</p>`;
   } else {
-    noteElement.innerHTML = `Click the joystick to start!
-        <p>Move every ball to the center. Ready for hard mode? Press H</p>`;
+    noteElement.innerHTML = `조이스틱을 클릭하면 시작합니다!
+        <p>모든 공을 센터에 넣으세요. 하드모드를 원하면 H를 누르세요</p>`;
   }
   noteElement.style.opacity = 1;
 
@@ -598,7 +598,7 @@ function main(timestamp) {
       )
     ) {
       noteElement.innerHTML = `Congrats, you did it!
-        ${!hardMode ? "<p>Press H for hard mode</p>" : ""}
+        ${!hardMode ? "<p>하드모드를 하려면 H를 누르시오.</p>" : ""}
         <p>
          
         </p>`;
@@ -610,12 +610,12 @@ function main(timestamp) {
     }
   } catch (error) {
     if (error.message == "The ball fell into a hole") {
-      noteElement.innerHTML = `A ball fell into a black hole! Press space to reset the game.
+      noteElement.innerHTML = `공이 구멍에 빠졌습니다. 다시 시작하려면 H를 누르세요
         <p>
-         Back to easy? Press E
+         쉬운 모드로 돌아갈려면 E를 누르세요.
         </p>`;
       noteElement.style.opacity = 1;
       gameInProgress = false;
     } else throw error;
   }
-}
+}ㅊ
