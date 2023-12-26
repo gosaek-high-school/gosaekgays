@@ -618,4 +618,4 @@ function main(timestamp) {
       gameInProgress = false;
     } else throw error;
   }
-}ㅊ
+}
